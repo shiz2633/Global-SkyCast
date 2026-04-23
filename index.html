@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arbutus+Slab&family=Arima:wght@100..700&family=Grandstander:ital,wght@0,100..900;1,100..900&family=Playwrite+IT+Moderna:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
+    <title>Global SkyCast</title>
+  </head>
+  <body>
+    <div class="weather-forecast">
+      <header>
+        <form class="search-form" id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            id="search-form-input"
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-forecast-data">
+          <!-- LEFT SIDE -->
+          <div class="weather-left">
+            <h1 class="weather-forecast-city" id="city">London</h1>
+
+            <div class="weather-forecast-temperature-container">
+              <img
+                src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png"
+                class="weather-forecast-icon"
+                id="icon"
+              />
+              <div class="weather-forecast-temperature" id="temperature">
+                12
+              </div>
+              <div class="weather-forecast-unit">°C</div>
+            </div>
+          </div>
+
+          <!-- RIGHT SIDE -->
+          <div class="weather-right">
+            <p class="weather-forecast-details">
+              <span id="time"></span><br />
+              <span id="description"></span> <br /><br />
+              Humidity: <strong id="humidity"></strong>,<br />
+              Wind: <strong id="wind-speed"> </strong>
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        Coded by
+        <a href="https://www.shecodes.io/graduates/159243-s-k" target="_blank"
+          >Sirin Kiani</a
+        >
+        Available on
+        <a href="https://github.com/shiz2633" target="_blank">GitHub</a> Hosted
+        on
+        <a
+          href="https://forecast-weather-app-project.netlify.app/"
+          target="_blank"
+          >Netlify</a
+        >
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
