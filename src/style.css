@@ -225,13 +225,10 @@ main {
     height: 90px;
   }
 }
-
 .global-forecast {
   display: flex;
   justify-content: space-around;
-  margin-top: 30px;
 }
-
 .global-forecast-date {
   text-align: center;
   font-size: 16px;
