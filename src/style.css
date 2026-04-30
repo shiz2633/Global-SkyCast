@@ -226,10 +226,43 @@ main {
   }
 }
 
+.global-forecast {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.global-forecast-date {
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 10px;
+  color: rgba(142, 141, 145, 0.8);
+}
+
+.global-forecast-icon {
+  font-size: 32px;
+  text-align: center;
+}
+
+.global-forecast-temperatures {
+  text-align: center;
+  font-size: 16px;
+  line-height: 18px;
+  margin-top: 10px;
+  color: blue;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.global-forecast-temperature-max {
+  font-weight: bold;
+}
 footer {
   border-top: 1px solid white;
   padding: 30px 0 0;
   text-align: center;
   font-size: 14px;
-  color: rgba(39, 33, 66, 0.4);
+  color: rgba(39, 33, 66, 0.2);
 }
